@@ -1,0 +1,61 @@
+K-GLOW MATCH — DEVPOST SUBMISSION DRAFT
+Review copy; not yet submitted.
+
+PROJECT NAME
+K-Glow Match
+
+TAGLINE
+From a selfie to your K-beauty routine—and a new shade to try.
+
+LIVE DEMO
+https://k-glow-match.vercel.app/
+
+INSPIRATION
+Choosing skincare online can feel overwhelming. We wanted to turn a skin report into a small, understandable next step: a curated Korean beauty routine, followed by a chance to explore lip and blush colors on the same photo.
+
+WHAT IT DOES
+K-Glow Match is a mobile-first beauty prototype in English, Korean and Spanish. With explicit permission, a user uploads a selfie for YouCam Skin AI analysis. The app shows five returned concern scores—moisture, dark spots, dark circles, wrinkles and texture—and skin age when the API supplies it. Missing values remain unavailable.
+
+The report leads to concern-matched recommendations from a built-in catalog of eight real K-beauty products. An optional age-range selector refines the product ordering without changing the analysis. Users can then choose lipstick and blush colors, explicitly render a YouCam Makeup VTO result, and compare it with the original. A demo bag supports quantities and totals without taking payments or creating orders.
+
+An explicitly labelled sample mode lets judges explore the interface without providing a selfie or spending API units. Its illustrative color preview is separate from the real YouCam render.
+
+HOW WE BUILT IT
+The interface uses React and Vite, deployed on Vercel. Server-side API functions handle YouCam authentication, signed file uploads, task creation and bounded polling. The integration uses both YouCam Skin Analysis REST and Makeup VTO REST. API credentials remain on the server. Signed session references expire after one hour.
+
+A small editable product catalog drives concern matching. UI translations are stored separately and the selected language is remembered on the device. Responsive layouts use large touch targets, a focused sequence of screens and a clean beauty-brand visual style.
+
+CHALLENGES
+We had to distinguish image rejection, expired sessions, request limits and other API failures without replacing errors with fabricated results. Mobile photo decoding also needed a fallback. A skin-age response variant used a numeric score inside the explicit skin_age entry; supporting that format fixed missing age display while keeping concern scores separate from age.
+
+ACCOMPLISHMENTS
+Both YouCam integrations have completed hosted tests using the vendor's public sample. The owner also confirmed a live phone skin report with all five concern scores, an average score and returned skin age after the parsing fix. Automated checks cover API adapters, explicit age extraction, mobile decoding, translations and recommendation behavior.
+
+WHAT WE LEARNED
+A useful beauty flow needs understandable feedback as much as an API connection. Explicit consent, honest missing-data states, clear separation of sample and live results, and a short report-to-recommendation path make the experience easier to evaluate.
+
+WHAT'S NEXT
+Improve product coverage and recommendation transparency, add durable per-user API usage limits before broad distribution, and validate the experience across more physical devices. Product checkout remains outside this prototype.
+
+BUILT WITH
+React; Vite; JavaScript; Node.js; Vercel; YouCam Skin Analysis API; YouCam Makeup VTO API; CSS.
+
+JUDGE WALKTHROUGH
+1. Open the live demo and select EN, KO or ES.
+2. For a no-photo review, choose the clearly labelled demo option.
+3. To use real analysis, upload a permitted selfie, enable processing consent and click Analyze with YouCam. This consumes API units.
+4. Review returned concern scores and skin age. A missing age is explicitly unavailable.
+5. Open the K-beauty matches; optionally select an age range or skip it.
+6. Continue to color, choose lipstick/blush shades and click Render with YouCam for the real VTO output.
+7. Compare before/after, add items to the demo bag, change quantities and review the total. No purchase occurs.
+
+LIMITATIONS / DISCLOSURES
+Cosmetic guidance, not a medical diagnosis. Product prices are a reference snapshot and may change. VTO colors are approximate inspirations, not certified brand shade matches. The app has no persistent photo database; YouCam processing and retention follow the vendor's policies. Sample mode is not a real skin measurement. No accounts, real payments, purchases or order fulfillment are implemented.
+
+REVIEW BEFORE SUBMITTING
+- Add a verified public GitHub repository URL. Not yet available in this draft.
+- Add the finished public demo-video URL. Video not yet produced.
+- Confirm the organizer's current form fields, video requirements, eligibility and deadline against the official contest page.
+- Use public-sample screenshots; do not publish the owner's private selfie without specific approval.
+- Confirm any AI-assistance disclosure requested by the organizer. This prototype was developed with Codex assistance.
+- Owner reviews and performs the final contest submission.

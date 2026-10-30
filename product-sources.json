@@ -1,0 +1,164 @@
+[
+  {
+    "id": "serum",
+    "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/files/glow-serum-propolis-niacinamide-1-front.webp?v=1770278801",
+    "title": "Glow Serum : Propolis + Niacinamide",
+    "variants": [
+      {
+        "title": "1.01 fl. oz.(30ml)",
+        "price": 1530,
+        "compare_at_price": 1700
+      },
+      {
+        "title": "2.03 fl. oz.(60ml)",
+        "price": 2720,
+        "compare_at_price": 3400
+      }
+    ],
+    "url": "https://beautyofjoseon.com/products/glow-serum-propolis-niacinamide",
+    "localImage": "/products/serum.webp"
+  },
+  {
+    "id": "eye",
+    "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/files/revive-eye-serum-ginseng-retinal-1-front.webp?v=1770287139",
+    "title": "Revive Eye Serum : Ginseng + Retinal",
+    "variants": [
+      {
+        "title": "30ml",
+        "price": 1700,
+        "compare_at_price": 1700
+      },
+      {
+        "title": "30ml x 2-Pack",
+        "price": 2550,
+        "compare_at_price": 3400
+      },
+      {
+        "title": "50ml x 2-Pack",
+        "price": 4200,
+        "compare_at_price": 5600
+      }
+    ],
+    "url": "https://beautyofjoseon.com/products/revive-eye-serum-ginseng-retinal",
+    "localImage": "/products/eye.webp"
+  },
+  {
+    "id": "cream",
+    "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/files/dynasty-cream-1-front.webp?v=1770618339",
+    "title": "Dynasty Cream",
+    "variants": [
+      {
+        "title": "1 fl.oz. (30ml)",
+        "price": 1500,
+        "compare_at_price": 1500
+      },
+      {
+        "title": "1.69 fl.oz.(50ml)",
+        "price": 2400,
+        "compare_at_price": 2400
+      },
+      {
+        "title": "3.38 fl.oz.(100ml)",
+        "price": 3200,
+        "compare_at_price": 4000
+      },
+      {
+        "title": "3.38 fl.oz.(100ml) 2-Pack",
+        "price": 7200,
+        "compare_at_price": 9600
+      }
+    ],
+    "url": "https://beautyofjoseon.com/products/dynasty-cream",
+    "localImage": "/products/cream.webp"
+  },
+  {
+    "id": "deep",
+    "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/files/02_0916__30ml_1.jpg?v=1789546505",
+    "title": "Glow Deep Serum : Rice + Alpha-Arbutin",
+    "variants": [
+      {
+        "title": "1.01 fl. oz.(30ml)",
+        "price": 1700,
+        "compare_at_price": 1700
+      },
+      {
+        "title": "2.03 fl. oz.(60ml)",
+        "price": 2720,
+        "compare_at_price": 3400
+      }
+    ],
+    "url": "https://beautyofjoseon.com/products/glow-deep-serum-rice-alpha-arbutin",
+    "localImage": "/products/deep.jpg"
+  },
+  {
+    "id": "revive",
+    "image": "https://cdn.shopify.com/s/files/1/0558/4135/7989/files/03_0916__30ml.jpg?v=1789546598",
+    "title": "Revive Serum : Ginseng + Snail Mucin",
+    "variants": [
+      {
+        "title": "1.01 fl. oz.(30ml)",
+        "price": 1700,
+        "compare_at_price": 1700
+      },
+      {
+        "title": "2.03 fl. oz.(60ml)",
+        "price": 2720,
+        "compare_at_price": 3400
+      }
+    ],
+    "url": "https://beautyofjoseon.com/products/revive-serum-ginseng-snail-mucin",
+    "localImage": "/products/revive.jpg"
+  },
+  {
+    "id": "essence",
+    "image": "https://cdn.shopify.com/s/files/1/0513/3775/6828/files/james_800x1067_1_1_4e9750cc-2cd6-4817-ace5-be2305a85806.jpg?v=1763111577",
+    "title": "Advanced Snail 96 Mucin Power Essence",
+    "variants": [
+      {
+        "title": "3.38 fl.oz / 100mL",
+        "price": 2500,
+        "compare_at_price": 2500
+      },
+      {
+        "title": "1.69 fl. oz / 50ml",
+        "price": 1400,
+        "compare_at_price": 1400
+      },
+      {
+        "title": "1.01 fl.oz / 30mL",
+        "price": 999,
+        "compare_at_price": 999
+      }
+    ],
+    "url": "https://www.cosrx.com/products/advanced-snail-96-mucin-power-essence",
+    "localImage": "/products/essence.jpg"
+  },
+  {
+    "image": "https://cdn.shopify.com/s/files/1/0598/8578/1067/files/18_MULLED_PEACH_1.jpg?v=1775131774",
+    "variants": [
+      {
+        "title": "MULLED PEACH",
+        "compare_at_price": 1400,
+        "price": 1400
+      }
+    ],
+    "id": "lip",
+    "url": "https://romandbeauty.com/products/juicy-lasting-tint",
+    "localImage": "/products/lip.jpg",
+    "title": "JUICY LASTING TINT"
+  },
+  {
+    "image": "https://cdn.shopify.com/s/files/1/0598/8578/1067/files/C02_BLUEBERRY_CHIP_1.jpg?v=1771982826",
+    "variants": [
+      {
+        "title": "BLUEBERRY CHIP",
+        "compare_at_price": 1250,
+        "price": 1250
+      }
+    ],
+    "id": "blush",
+    "url": "https://romandbeauty.com/products/better-than-cheek",
+    "localImage": "/products/blush.jpg",
+    "title": "BETTER THAN CHEEK"
+  }
+]

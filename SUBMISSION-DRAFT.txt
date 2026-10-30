@@ -53,8 +53,8 @@ LIMITATIONS / DISCLOSURES
 Cosmetic guidance, not a medical diagnosis. Product prices are a reference snapshot and may change. VTO colors are approximate inspirations, not certified brand shade matches. The app has no persistent photo database; YouCam processing and retention follow the vendor's policies. Sample mode is not a real skin measurement. No accounts, real payments, purchases or order fulfillment are implemented.
 
 REVIEW BEFORE SUBMITTING
-- Add a verified public GitHub repository URL. Not yet available in this draft.
-- Add the finished public demo-video URL. Video not yet produced.
+- Verified public source: https://github.com/Joyleesales/k-glow-match
+- Review the finished local MP4 (submission-video/K-Glow-Match-demo-review-v2.mp4), then add its public YouTube/Vimeo URL. Public upload is pending.
 - Confirm the organizer's current form fields, video requirements, eligibility and deadline against the official contest page.
 - Use public-sample screenshots; do not publish the owner's private selfie without specific approval.
 - Confirm any AI-assistance disclosure requested by the organizer. This prototype was developed with Codex assistance.

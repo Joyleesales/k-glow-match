@@ -1,0 +1,31 @@
+K-Glow Match — 제출 전 검토 안내 (2026-10-30)
+
+완료된 자료
+앱: https://k-glow-match.vercel.app/
+공개 GitHub: https://github.com/Joyleesales/k-glow-match
+영문 소개문: SUBMISSION-DRAFT.txt
+검토용 영상: submission-video/K-Glow-Match-demo-review-v2.mp4
+
+영상은 영문 화면 설명이 있는 무음 시연입니다. 실제 앱 작동 화면을 녹화했고,
+YouCam 공식 샘플 사진으로 실제 Skin AI 및 Makeup VTO 결과를 만들었습니다.
+사용자님의 개인 셀피는 영상이나 공개 저장소에 넣지 않았습니다.
+실제 피부 분석과 데모 장바구니(실제 결제 없음)를 구분해 표시했습니다.
+
+지금 확인할 것
+1. 영상에서 소개 순서와 설명이 원하는 내용인지 확인합니다.
+2. 영문 소개문에서 본인의 동기·학습 경험과 맞지 않는 문장은 수정 요청합니다.
+3. 영상 공개 전 제품 사진·브랜드 자산 등 제3자 자료의 사용 조건을 확인합니다.
+
+검토 후 남는 제출 단계
+1. 영상을 YouTube 또는 Vimeo에 공개 업로드하고 공개 영상 URL을 확보합니다.
+2. Devpost에서 앱 URL, GitHub URL, 영상 URL과 영문 소개문을 입력합니다.
+3. 해당되는 수상 부문은 본인이 자격을 확인해 선택합니다.
+4. 규정을 읽고 최종 제출은 사용자가 직접 완료합니다.
+
+공식 안내 확인일: 2026-10-30
+대회: YouCam API Skin AI & eCommerce VTO Hackathon
+규정: https://youcam-api-skin-ai-ecommerce.devpost.com/rules
+마감: 2026-11-02 오전 11:45 미국 동부 / 오전 8:45 미국 태평양
+규정상 데모 영상은 1~3분이며, 사용한 YouCam API 설명과 작동 화면이 필요합니다.
+현재 MP4는 검토용 로컬 파일이고 YouTube/Vimeo 공개 링크는 아직 없습니다.
+컨테스트에 아직 제출하지 않았습니다.

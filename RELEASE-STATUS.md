@@ -26,4 +26,4 @@ Live app: https://k-glow-match.vercel.app
 
 Deployed to the owner's Vercel Hobby team. The production API key is stored as a server-side Secret; `.env` is excluded from Git and deployment uploads. Public homepage and configuration endpoint return HTTP 200. Hosted Skin AI and Makeup VTO both completed with the vendor's public sample. Browser checks on the production URL confirmed the sample report, optional age selector, product matches, and $57.30 ritual bag total.
 
-GitHub repository publication is being finalized separately. Never publish `.env`.
+Public repository: https://github.com/Joyleesales/k-glow-match . Source and three reviewed illustrated sample screenshots are published. Actual credentials and owner private selfies were excluded. A silent English review MP4 is prepared locally; owner review, public YouTube/Vimeo upload and final contest submission remain. Never publish `.env`.

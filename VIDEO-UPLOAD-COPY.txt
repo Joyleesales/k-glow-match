@@ -1,0 +1,15 @@
+Suggested video title
+K-Glow Match — YouCam Skin AI + Makeup VTO Demo
+
+Suggested video description
+K-Glow Match is a mobile-first prototype that connects a selfie-based skin report to Korean beauty recommendations and virtual lip/blush try-on.
+
+This demonstration uses both YouCam Skin Analysis REST and Makeup VTO REST. The live sections use YouCam's published sample photo; the app's sample mode and demo cart are clearly labelled. No private owner selfie is used. Skin age is displayed only when returned explicitly by the API.
+
+Live app: https://k-glow-match.vercel.app/
+Public source: https://github.com/Joyleesales/k-glow-match
+
+English, Korean and Spanish UI. React + Vite + Vercel. Cosmetic guidance, not a medical diagnosis. Reference prices may change. No payment or real order is created.
+
+Review note
+This is a silent, English on-screen walkthrough. Owner review and public YouTube/Vimeo upload are pending. Do not treat this file as a completed upload or contest submission.

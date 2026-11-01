@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { products, metrics } from "./catalog";
 import "./style.css";
 import { api, preparePhoto, runTask } from "./youcam";
-import { agePreferences, refineRecommendations } from "./recommendations";
+import { refineRecommendations, inRoutineOrder, routinePosition, routineSteps } from "./recommendations";
 import { LanguageContext, languages, initialLanguage, translate, translateError, translateTree } from "./i18n";
 const money = (n) => `$${n.toFixed(2)}`;
 function Portrait({ photo, lip, blush, amount = 55, before = false }) {
@@ -272,7 +272,7 @@ function App() {
       ? concernMetrics.filter((m) => m.score < 70)
       : concernMetrics.slice(0, 2)
   ).map((m) => m.concern);
-  const routine = refineRecommendations(
+  const routine = inRoutineOrder(refineRecommendations(
     products.filter((p) => selected.includes(p.concern)),
     ageRange,
   )
@@ -280,8 +280,8 @@ function App() {
       (p, i, list) =>
         list.findIndex((other) => other.concern === p.concern) === i,
     )
-    .slice(0, 3);
-  const visible = refineRecommendations(
+    .slice(0, 3));
+  const visible = inRoutineOrder(refineRecommendations(
     products.filter(
       (p) =>
         filter === "all" ||
@@ -290,7 +290,7 @@ function App() {
           : p.concern === filter),
     ),
     ageRange,
-  );
+  ));
   const content = (
     <>
       <header>
@@ -560,8 +560,8 @@ function App() {
                   Your age range <span>Optional</span>
                 </label>
                 <p id="age-help">
-                  Skip this if you prefer. Choosing a range adjusts the order of
-                  your matches; your skin report still guides product selection.
+                  Skip this if you prefer. Choosing a range refines matches within
+                  each routine step; your skin report still guides product selection.
                 </p>
               </div>
               <select
@@ -579,7 +579,7 @@ function App() {
             </div>
             {ageRange && (
               <p className="muted" role="status">
-                {`Refined for ${ageRange}:`} {agePreferences[ageRange].description}{" "}
+                {`Refined for ${ageRange}:`} Products stay in routine order.{" "}
                 Editorial demo preferences, not an assessment of your skin.
               </p>
             )}
@@ -600,6 +600,12 @@ function App() {
                 </button>
               ))}
             </div>
+            <ol className="routine-steps" aria-label="Skincare routine order">
+              {routineSteps.map((step) => (
+                <li key={step.number}><b>{step.number}</b><span>{step.label}</span></li>
+              ))}
+            </ol>
+            <p className="routine-note">Toner and sunscreen are not in the current eight-product catalog.</p>
             <div className="routine-card">
               <div>
                 <p className="eyebrow">YOUR CURATED RITUAL</p>
@@ -631,8 +637,9 @@ function App() {
               </button>
             </div>
             <div className="product-grid">
-              {visible.map((p, i) => (
+              {visible.map((p) => (
                 <article className="product" key={p.id}>
+                  <p className="routine-product-step">{routinePosition(p).label}</p>
                   <div
                     className="product-image"
                     style={{ background: `${p.color}20` }}
@@ -643,9 +650,6 @@ function App() {
                         : `FOR ${p.concern.toUpperCase()}`}
                     </span>
                     <img src={p.image} alt={`${p.brand} ${p.name}`} />
-                    <span className="product-index">
-                      0{products.indexOf(p) + 1}
-                    </span>
                   </div>
                   <p className="brand">{p.brand}</p>
                   <h3>{p.name}</h3>

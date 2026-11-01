@@ -2,6 +2,19 @@ import React from 'react';
 
 // English source copy is the stable message key. Catalog names are never translated.
 const rows = `
+Toner|토너|Tónico
+Serum|세럼|Sérum
+Cream|크림|Crema
+Sunscreen|선크림|Protector solar
+1 Toner|1 토너|1 Tónico
+2 Serum|2 세럼|2 Sérum
+3 Cream|3 크림|3 Crema
+4 Sunscreen|4 선크림|4 Protector solar
+Essence · before serum|에센스 · 세럼 전|Esencia · antes del sérum
+Skincare routine order|스킨케어 사용 순서|Orden de la rutina de cuidado
+Toner and sunscreen are not in the current eight-product catalog.|현재 8개 상품 목록에는 토너와 선크림이 없습니다.|El catálogo actual de ocho productos no incluye tónico ni protector solar.
+Products stay in routine order.|상품은 스킨케어 사용 순서로 표시됩니다.|Los productos mantienen el orden de la rutina.
+Skip this if you prefer. Choosing a range refines matches within each routine step; your skin report still guides product selection.|선택하지 않아도 됩니다. 연령대는 각 단계 안의 추천을 조정하며, 제품은 피부 리포트를 바탕으로 선정됩니다.|Puedes omitirlo. El rango ajusta las recomendaciones dentro de cada paso; tu informe de piel sigue guiando la selección.
 Your face is too small in the uploaded image. Crop the existing photo closer so your face fills most of the frame.|사진 속 얼굴 영역이 너무 작습니다. 다시 촬영할 필요 없이 기존 사진을 얼굴 중심으로 더 가깝게 잘라주세요.|El rostro ocupa poco espacio. Recorta la foto existente para que el rostro llene la mayor parte del encuadre.
 Part of your face is outside the uploaded image. Choose a crop that includes your entire forehead and chin.|얼굴 일부가 사진 밖으로 잘렸습니다. 이마와 턱 전체가 포함된 사진을 선택하세요.|Parte del rostro queda fuera de la imagen. Incluye toda la frente y la barbilla en el recorte.
 YouCam did not detect a face in the uploaded image. Check the photo preview and try a closer crop.|YouCam이 사진에서 얼굴을 찾지 못했습니다. 미리보기를 확인하고 얼굴 중심으로 잘라주세요.|YouCam no detectó un rostro. Revisa la vista previa e intenta un recorte más cercano.

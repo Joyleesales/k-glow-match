@@ -27,3 +27,26 @@ export function refineRecommendations(items, ageRange) {
   };
   return [...items].sort((a, b) => rank(a.id) - rank(b.id));
 }
+
+export const routineSteps = [
+  { number: 1, label: "Toner" },
+  { number: 2, label: "Serum" },
+  { number: 3, label: "Cream" },
+  { number: 4, label: "Sunscreen" },
+];
+
+// Keep the existing catalog intact: essence is not a toner, and makeup is
+// separate from the skincare routine. Scores never determine display order.
+export function routinePosition(product) {
+  const type = product.type.toLowerCase();
+  if (type.includes("toner")) return { order: 1, label: "1 Toner" };
+  if (type.includes("essence")) return { order: 1.5, label: "Essence · before serum" };
+  if (type.includes("serum")) return { order: 2, label: "2 Serum" };
+  if (type.includes("sunscreen")) return { order: 4, label: "4 Sunscreen" };
+  if (type.includes("cream")) return { order: 3, label: "3 Cream" };
+  return { order: 5, label: "Makeup" };
+}
+
+export function inRoutineOrder(items) {
+  return [...items].sort((a, b) => routinePosition(a).order - routinePosition(b).order);
+}

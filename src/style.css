@@ -436,6 +436,38 @@ h2 {
   font-size: 8px;
   letter-spacing: 1px;
 }
+.routine-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 10px;
+}
+.routine-steps li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 8px;
+  background: #eef0e5;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.routine-steps b {
+  color: #35452d;
+}
+.routine-note {
+  color: #697260;
+  font-size: 11px;
+  margin-bottom: 22px;
+}
+.routine-product-step {
+  font-size: 13px;
+  font-weight: 600;
+  color: #35452d;
+  margin: 0 0 12px;
+}
 .product-index {
   position: absolute;
   right: 14px;
